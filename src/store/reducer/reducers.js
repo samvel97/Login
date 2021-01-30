@@ -11,7 +11,7 @@ export default (state=initialState,action={})=>{
       if(action.form.email === 'Admin@mail.ru' && action.form.password === '12345'){
       return {auth:true}
       }
-      return {...state, errorMessage:'sxala'}
+      return {...state, errorMessage:'The email or password you’ve entered doesn’t match any account.'}
     }
     default:return state
   }

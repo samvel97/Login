@@ -16,11 +16,11 @@ const Login = ()=>{
   return(
     <>
     <form className='login' onSubmit={handleSubmit}>
-      <h1>JOIN US</h1>
+      <h2>JOIN US</h2>
       <input type='email' name='email' placeholder='Email' value={form.email} onChange={handleChange} className='info'/><br/>
       <input type='password' name='password' placeholder='Password' value={form.password} onChange={handleChange} className='info'/><br/>
       <button type='submit' className='info'>Log in</button>
-      <h2>{errorMessage}</h2>
+      <span>{errorMessage}</span>
     </form>
     </>
     )
