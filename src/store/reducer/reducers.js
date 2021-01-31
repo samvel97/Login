@@ -8,7 +8,7 @@ const initialState = {
 export default (state=initialState,action={})=>{
   switch(action.type){
     case 'LOG_IN':{
-      if(action.form.email === 'Admin@mail.ru' && action.form.password === '12345'){
+      if(action.form.email === 'Admin' && action.form.password === '12345'){
       return {auth:true}
       }
       return {...state, errorMessage:'The email or password you’ve entered doesn’t match any account.'}
